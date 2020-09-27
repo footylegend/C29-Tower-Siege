@@ -102,7 +102,10 @@ function draw() {
 
   string.display();
   
-  text("siege these colourful blocks using the baseball ball", 200,100);
+  fill("turquoise");
+  textSize(40);
+  text("Siege these colorful blocks using the baseball",100,100);
+
 }
 function mouseDragged(){
   Matter.Body.setPosition(this.ball, {x: mouseX , y: mouseY});
