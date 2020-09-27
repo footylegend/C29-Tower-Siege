@@ -99,13 +99,11 @@ function draw() {
 
   imageMode(CENTER)
   image(ball_Img ,ball.position.x,ball.position.y,40, 40);
-
+ 
   string.display();
-  
   fill("turquoise");
   textSize(40);
   text("Siege these colorful blocks using the baseball",100,100);
-
 }
 function mouseDragged(){
   Matter.Body.setPosition(this.ball, {x: mouseX , y: mouseY});
