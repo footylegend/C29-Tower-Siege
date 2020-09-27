@@ -99,13 +99,10 @@ function draw() {
 
   imageMode(CENTER)
   image(ball_Img ,ball.position.x,ball.position.y,40, 40);
- 
-  //ball.display();
+
   string.display();
-  /*drawSprites();
-  if(keyCode===32){
-    string.fly();
-  }*/
+  
+  text("siege these colourful blocks using the baseball ball", 200,100);
 }
 function mouseDragged(){
   Matter.Body.setPosition(this.ball, {x: mouseX , y: mouseY});
